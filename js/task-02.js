@@ -10,12 +10,14 @@ const ingredients = [
 
 
 
-const listEl = document.getElementById("ingredients");
+const listEl = document.querySelector('ul[id="ingredients"]');
 
-const addLiEl = ingredients.forEach(element => {
+const addLiEl = ingredients.map(element => {
   const itemEl = document.createElement('li');
   itemEl.classList.add('item');
   itemEl.textContent = element;
 
-  return listEl.appendChild(itemEl); // многократное добавление элемента?
+  return itemEl;
 });
+
+listEl.append(...addLiEl);

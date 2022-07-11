@@ -1,4 +1,4 @@
-const inputEl =  document.getElementById('validation-input');
+const inputEl =  document.querySelector('input[id="validation-input"]');
 
 
 inputEl.addEventListener('input', stringValidation);

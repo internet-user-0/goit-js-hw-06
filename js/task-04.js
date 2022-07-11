@@ -1,7 +1,6 @@
 const takeawayButtonEl = document.querySelector('button[data-action="decrement"]');
 const addButtonEl = document.querySelector('button[data-action="increment"]');
-const spanEl = document.getElementById('value');
-
+const spanEl = document.querySelector('span[id="value"]');
 const action = {
    value: 0,
    decrement() {
