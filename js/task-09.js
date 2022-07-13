@@ -8,6 +8,6 @@ buttonEl.addEventListener('click', colorGeneration)
 
 function colorGeneration() {
   const color = getRandomHexColor();
-  document.querySelector('body').style.backgroundColor = `${color}`;
+  document.querySelector('body').style.backgroundColor = color;
   document.querySelector('.color').textContent = color;
 }
